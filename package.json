@@ -1,0 +1,21 @@
+{
+  "name": "css-framework-ca",
+  "version": "0.0.1",
+  "description": "socialmedia app made with bootstrap and SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "(https://github.com/nyolarraklay/css-frameworks)"
+  },
+  "keywords": [
+    "css",
+    "frameworks",
+    "bootstrap.",
+    "sass"
+  ],
+  "author": "Ernesto Osorio Jr <ernOso@stud.noroff.no>",
+  "license": "ISC"
+}
