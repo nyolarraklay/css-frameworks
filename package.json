@@ -17,5 +17,8 @@
     "sass"
   ],
   "author": "Ernesto Osorio Jr <ernOso@stud.noroff.no>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.1"
+  }
 }
