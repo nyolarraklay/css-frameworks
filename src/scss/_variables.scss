@@ -1,4 +1,4 @@
-// scss-docs-start theme-color-variables
+
 $primary:       rgb(213, 12, 240);
 $spacer: 1rem;
 $spacers: (
@@ -14,9 +14,36 @@ $spacers: (
 );
 
 .frontView {
-    height: 85vh;
+    height: 95vh;
 
 };
+
+$container-max-widths: (
+  
+  sm: 300px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 100vw
+) ;
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 300px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+) ;
+
+$font-sizes: (
+  7:.800rem,
+  8:.500rem,
+);
+
+
+
+
 
    
 

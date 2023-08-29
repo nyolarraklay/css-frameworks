@@ -7,47 +7,46 @@
     <title>Document</title>
 
 </head>
-<body>
-   <main class="bg-light frontView">
-    <div class="container-lg p-8 ">
-        <div class="row justify-content-between">
-            <div class="col-md-6 text-center text-md-start">
-                <h1>
-                    <div class="display-2 text-primary">Circle Connect</div>
-                    <p class="lead my-3 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, in!</p>
-                </h1>
+<body class="bg-muted">
+        <div class="container justify-content-evenly d-flex flex-column flex-lg-row mt-5 pt-5">
+            <div class="text-center text-lg-start mt-lg-5 pt-lg-5">
+                <h1 class="fw-bold text-primary">Circle Connect</h1>
+                <p class="lead mx-auto mx-lg-0 text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, in!</p>
             </div>
-            <div class="col-md-6 text-start ">
-                <form class="border border-primary p-3 rounded">
+            <div class="text-start bg-white shadow rounded p-3 input-group-lg">
+                <form>
                     <label for="email" class="form-label d-none">Email address:</label>                     
                     <input type="email" class="form-control my-3" id="email" placeholder="e.g. JohnWick@example.com">   
                     <label for="password" class="form-label d-none">Password:</label>
                     <input type="password" class="form-control my-3" id="password" placeholder="Password">
-                    <div class="mb-4 text-center">
-                        <button type="submit" class="btn btn-secondary">Log in</button>
+                    <a href="#"><button class="btn btn-primary w-100 my-3">Log In</button></a>
+                    <a href="#" class="text-decoration-none text-center"><p>Forgotten Password</p></a>
+                    <hr>
+                    <div class="my-4 text-center">
+                        <button class="btn btn-info btn-lg">Create New Account</button>
                     </div>
-                    <div class="mb-4 text-center">
-                        <a href="#">Forgot Password</a>
-                       
-                    </div>
-                    <div class="border-bottom border-muted border-3">
-                    </div>
-                    <div class="mb-4 text-center">
-                        <a href="#" class="btn btn-secondary my-3">Create New Account</a>
-                       
-                    </div>
-
                 </form>
-               
             </div>
         </div>
 
-    </div>
-
-   </main>
-    <footer class="bg-muted mt-5">
-        <di class="container text-start">
-            <p class="mb-3">Noroff-CA ©2023</p>
+    <footer class="bg-white p-4 text-muted">
+        <div class="container">
+            <div class="d-flex flex-wrap">
+                <p class="mx-2 fs-8 mb-0">English</p>
+                <p class="mx-2 fs-8 mb-0">Chinese</p>
+                <p class="mx-2 fs-8 mb-0">Korean</p>
+                <p class="mx-2 fs-8 mb-0">Tagalog</p>
+                <p class="mx-2 fs-8 mb-0">Norwegian</p>
+            </div>
+            <div class="d-flex flex-wrap">
+                <p class="mx-2 fs-8 mb-0">Log In</p>
+                <p class="mx-2 fs-8 mb-0">Message</p>
+                <p class="mx-2 fs-8 mb-0">Sign Up</p>
+                <p class="mx-2 fs-8 mb-0">Watch</p>
+            </div>
+            <div class="mt-2 mx-2">
+                <p class="fs-8">&copy; 2023</p>
+            </div>
         </div>
     </footer>
     
