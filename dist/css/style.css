@@ -11831,7 +11831,8 @@ textarea.form-control-lg {
   object-fit: cover;
 }
 
-.searchBar, .brandName {
+.searchBar,
+.brandName {
   min-height: 40px;
   min-width: 230px;
 }
@@ -11840,7 +11841,8 @@ textarea.form-control-lg {
   min-width: 180px;
 }
 
-.sidebar, .sidebarRight {
+.sidebar,
+.sidebarRight {
   max-width: 360px;
   z-index: 4;
 }
@@ -11879,12 +11881,33 @@ textarea.form-control-lg {
 }
 
 .customProfile {
-  height: 350px;
+  height: 180px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
 .customPosition {
-  left: 40%;
-  bottom: -30px;
+  top: -50px;
+  width: 155px;
+  height: 150px;
+}
+
+.customWrapper {
+  border-radius: 18px;
+  width: 380px;
+}
+
+.imageContainer {
+  height: 160px;
+}
+
+.logoCircle {
+  width: 150px;
+  height: 150px;
+}
+
+.customHeading {
+  top: -35px;
 }
 
 /*# sourceMappingURL=style.css.map */

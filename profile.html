@@ -1,149 +1,357 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="dist/css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="dist/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
     <title>Document</title>
-
-</head>
-<body bg-light>
+  </head>
+  <body bg-light>
     <!--Top section-->
     <div class="bg-white d-flex align-items-center fixed-top shadow">
-        <div class="container-fluid">
-            <div class="row align-items-center">
-                <!--left-side-->
-                <div class="col d-flex align-items-center">
-                    <a href="index.html" class="fs-3 text-primary m-0 brandName text-decoration-none"> Circle Connect</a> 
-                    <div class="input-group ms-2">
-                        <!--mobile-->
-                        <span class="input-group-prepend  d-lg-none" id="searchMenu" data-bs-toggle="dropdown" type="button" data-bs-auto-close="outside">
-                            <div class="input-group-text bg-gray border-0 rounded-circle">
-                                <i class="bi bi-search me-2 text-muted"></i>
-                            </div>
-                        </span>
-                        <!--desktop-->
-                        <span class="input-group-prepend d-none d-lg-block" id="searchMenu" data-bs-toggle="dropdown" type="button" data-bs-auto-close="outside">
-                            <div class="input-group-text bg-gray border-0 rounded-pill">
-                                <i class="bi bi-search me-2 text-muted"></i>
-                            <p class="m-0 fs-7 text-muted">Search Circle Connect</p>
-                            </div>
-                        </span>
-                            <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="searchMenu">
-                                <li>
-                                <input class="rounded-pill border-0 bg-gray dropdown-item" type="text" placeholder="Search Friends...." autofocus/>
-                                </li>
-                                <!--first search-->
-                              <li class="my-4">
-                                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between" role="alert">
-                                    <div class="d-flex align-items-center">
-                                        <img src="https://source.unsplash.com/random/1" alt="user image" class="rounded-circle me-2 avatar">
-                                        <p class="m-0">Lorem, ipsum</p>
-                                        <button type="button" class="ms-5 btn-close fs-8"
-                                        data-bs-dismiss="alert"
-                                        aria-label="Close"></button>
-                                    </div>
-                                </div>
-                              </li>
-                              <!--2nd searchitem-->
-                              <li class="my-4">
-                                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between" role="alert">
-                                    <div class="d-flex align-items-center">
-                                        <img src="https://source.unsplash.com/random/2" alt="user image" class="rounded-circle me-2 avatar">
-                                        <p class="m-0">Lorem, ipsum</p>
-                                        <button type="button" class="ms-5 btn-close fs-8"
-                                        data-bs-dismiss="alert"
-                                        aria-label="Close"></button>
-                                    </div>
-                                </div>
-                              </li>
-                              <!--3rd searchitem-->
-                              <li class="my-4">
-                                <div class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between" role="alert">
-                                    <div class="d-flex align-items-center">
-                                        <img src="https://source.unsplash.com/random/3" alt="user image" class="rounded-circle me-2 avatar">
-                                        <p class="m-0">Lorem, ipsum</p>
-                                        <button type="button" class="ms-5 btn-close fs-8"
-                                        data-bs-dismiss="alert"
-                                        aria-label="Close"></button>
-                                    </div>
-                                </div>
-                              </li>
-                            </ul>
-                          
-                    </div>
+      <div class="container-fluid">
+        <div class="row align-items-center">
+          <!--left-side-->
+          <div class="col d-flex align-items-center">
+            <a
+              href="index.html"
+              class="fs-3 text-primary m-0 brandName text-decoration-none"
+            >
+              Circle Connect</a
+            >
+            <div class="input-group ms-2">
+              <!--mobile-->
+              <span
+                class="input-group-prepend d-lg-none"
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                type="button"
+                data-bs-auto-close="outside"
+              >
+                <div class="input-group-text bg-gray border-0 rounded-circle">
+                  <i class="bi bi-search me-2 text-muted"></i>
                 </div>
-                <!--center-->
-                <div class="col d-none d-lg-flex justify-content-center">
-                    <div class="mx-4">
-                        <button class="btn px-4">
-                            <i class="text-muted fs-4 bi bi-house-door-fill"></i>
-                        </button>
-                    </div>
-                    <div class="mx-4">
-                        <button class="btn px-4">
-                            <i class="text-muted fs-4 bi bi-shop"></i>
-                        </button>
-                    </div>
-                    <div class="mx-4">
-                        <button class="btn px-4">
-                            <i class="text-muted fs-4 bi bi-people-fill"></i>
-                        </button>
-                    </div>
-                    <div class="mx-4">
-                        <button class="btn px-4">
-                            <i class="text-muted fs-4 bi bi-controller"></i>
-                        </button>
-                    </div>
+              </span>
+              <!--desktop-->
+              <span
+                class="input-group-prepend d-none d-lg-block"
+                id="searchMenu"
+                data-bs-toggle="dropdown"
+                type="button"
+                data-bs-auto-close="outside"
+              >
+                <div class="input-group-text bg-gray border-0 rounded-pill">
+                  <i class="bi bi-search me-2 text-muted"></i>
+                  <p class="m-0 fs-7 text-muted">Search Circle Connect</p>
                 </div>
-                <!--right-side-->
-                <div class="col d-flex d-md-none d-xl-flex  align-items-center justify-content-end">
-                    <div class="d-none d-md-flex align-items-center justify-content-center">
-                        <img src="https://source.unsplash.com/random/4" alt="user image" class="rounded-circle me-1 avatar">
-                        <p class="m-0">JohnWick</p>
+              </span>
+              <ul
+                class="dropdown-menu border-0 shadow p-3 overflow-auto"
+                aria-labelledby="searchMenu"
+              >
+                <li>
+                  <input
+                    class="rounded-pill border-0 bg-gray dropdown-item"
+                    type="text"
+                    placeholder="Search Friends...."
+                    autofocus
+                  />
+                </li>
+                <!--first search-->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://source.unsplash.com/random/1"
+                        alt="user image"
+                        class="rounded-circle me-2 avatar"
+                      />
+                      <p class="m-0">Lorem, ipsum</p>
+                      <button
+                        type="button"
+                        class="ms-5 btn-close fs-8"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                      ></button>
                     </div>
-                    <div class="p-1 mx-2 bg-light rounded-circle d-md-flex align-items-center avatar justify-content-center">
-                        <i class="bi bi-chat-fill"></i>
+                  </div>
+                </li>
+                <!--2nd searchitem-->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://source.unsplash.com/random/2"
+                        alt="user image"
+                        class="rounded-circle me-2 avatar"
+                      />
+                      <p class="m-0">Lorem, ipsum</p>
+                      <button
+                        type="button"
+                        class="ms-5 btn-close fs-8"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                      ></button>
                     </div>
-                    <div class="p-1 mx-2 bg-light rounded-circle d-md-flex align-items-center avatar justify-content-center">
-                        <i class="bi bi-bell-fill"></i>
+                  </div>
+                </li>
+                <!--3rd searchitem-->
+                <li class="my-4">
+                  <div
+                    class="alert fade show dropdown-item p-1 m-0 d-flex align-items-center justify-content-between"
+                    role="alert"
+                  >
+                    <div class="d-flex align-items-center">
+                      <img
+                        src="https://source.unsplash.com/random/3"
+                        alt="user image"
+                        class="rounded-circle me-2 avatar"
+                      />
+                      <p class="m-0">Lorem, ipsum</p>
+                      <button
+                        type="button"
+                        class="ms-5 btn-close fs-8"
+                        data-bs-dismiss="alert"
+                        aria-label="Close"
+                      ></button>
                     </div>
-                    <div class="p-1 mx-2 bg-light rounded-circle d-md-flex align-items-center avatar justify-content-center">
-                        <i class="bi bi-caret-down-fill"></i>
-                    </div>
-                </div>  
-            </div> 
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!--center-->
+          <div class="col d-none d-lg-flex justify-content-center">
+            <div class="mx-4">
+              <button class="btn px-4">
+                <i class="text-muted fs-4 bi bi-house-door-fill"></i>
+              </button>
+            </div>
+            <div class="mx-4">
+              <button class="btn px-4">
+                <i class="text-muted fs-4 bi bi-shop"></i>
+              </button>
+            </div>
+            <div class="mx-4">
+              <button class="btn px-4">
+                <i class="text-muted fs-4 bi bi-people-fill"></i>
+              </button>
+            </div>
+            <div class="mx-4">
+              <button class="btn px-4">
+                <i class="text-muted fs-4 bi bi-controller"></i>
+              </button>
+            </div>
+          </div>
+          <!--right-side-->
+          <div
+            class="col d-flex d-md-none d-xl-flex align-items-center justify-content-end"
+          >
+            <div
+              class="d-none d-md-flex align-items-center justify-content-center"
+            >
+              <img
+                src="https://source.unsplash.com/random/4"
+                alt="user image"
+                class="rounded-circle me-1 avatar"
+              />
+              <p class="m-0">JohnWick</p>
+            </div>
+            <div
+              class="p-1 mx-2 bg-light rounded-circle d-md-flex align-items-center avatar justify-content-center"
+            >
+              <i class="bi bi-chat-fill"></i>
+            </div>
+            <div
+              class="p-1 mx-2 bg-light rounded-circle d-md-flex align-items-center avatar justify-content-center"
+            >
+              <i class="bi bi-bell-fill"></i>
+            </div>
+            <div
+              class="p-1 mx-2 bg-light rounded-circle d-md-flex align-items-center avatar justify-content-center"
+            >
+              <i class="bi bi-caret-down-fill"></i>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
     <!--main-->
     <div class="container-fluid mt-2">
-        <div class="row justify-content-evenly">
-            <div class="col-12 col-lg-3"></div>
-            <div class="col-12 col-lg-6">
-                <div class="d-flex flex-column justify-content-center timelineWidth w-100 mx-auto pt-4 position-relative">
-                    <img src="https://source.unsplash.com/random/18" alt="story 2" class="customProfile card-img-top rounded imageStory">
-                    <div class="d-flex justify-content-between position-absolute customPosition">
+      <div class="row justify-content-evenly">
+        <div class="col-12 col-lg-3"></div>
+        <div class="col-12 col-lg-6 mt-5">
+          <div class=" border border-1 border-secondary m-auto customWrapper">
+            <div class="imageContainer bg-gray">
+              <img
+                src="https://source.unsplash.com/random/18"
+                alt="story 2"
+                class="customProfile w-100"/>
+            </div>
 
-                        <div class="d-flex justify-content-between position-relative mt-5">
-                        
-                            <div class="sponsorImage rounded-circle border-1 border-white">
-                                <img src="https://source.unsplash.com/collection/happy-people" alt="myday" class="sponsorImage rounded-circle">
-                                <div class="d-flex align-items-center justify-content-center position-relative storyHeight">
-                                    <div class="position-absolute top-0 start-25 translate-middle">
-                                        <i class="bi bi-camera-fill fs-3 p1 text-primary rounded-circle"></i>
-                                    </div>
-                                </div>
-                            </div>   
-                                
-                        </div>                        
-                    </div>
+            <div>
+                <div class="position-relative m-auto, border border-3 customPosition border-light m-auto rounded-circle">
+                  <img
+                    src="https://source.unsplash.com/collection/happy-people"
+                    alt="my day"
+                    class="logoCircle rounded-circle"
+                  />
+                </div>  
+    
+                <div>
+                    <h2 class="position-relative text-center customHeading">John Wick</h2></div>
                 </div>
-                   
-            <div class="col-12 col-lg-3"></div>
-           
+                <div class="d-flex align-items-centers justify-content-between mx-4 mb-2">
+                    <button class="btn btn-info"><i class="bi bi-plus"></i>Add to story</button>
+                    <button class="btn btn-secondary"><i class="bi bi-pencil"></i>Add to story</button>
+                    <button class="btn btn-secondary">
+                    <i class="bi bi-three-dots"></i></button>
+                </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-start">
+            <p class="border border-1 border-red bg-info rounded-circle p-3 me-3">Post</p>
+            <p>Reels</p>
+          </div>
+        <hr class="m-0">
+
+            <ul class="navbar-nav mt-4 ms-3 d-flex flex-column pb-5 mb-5 pt-5 w-100 sidebar">
+                        <li class="dropdown-item p1 rounded">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="https://source.unsplash.com/random/1" alt="avatar" class="rounded-circle avatar">
+                                </div>
+                                <p class="m-0">JohnWick</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item p1 rounded">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="https://th.bing.com/th/id/R.b91dd54dfe63347f05c952339bdaf332?rik=pYZKKTRQRgOXjQ&riu=http%3a%2f%2fichef.bbci.co.uk%2fnews%2f976%2fcpsprodpb%2f1CB1%2fproduction%2f_84154370_facebook.jpg&ehk=TYdQyh7%2fNmRn3tbJ8EyUarnNuZwP9t2fi0w%2fRf6JhZ8%3d&risl=&pid=ImgRaw&r=0" alt="avatar" class="rounded-circle avatar">
+                                </div>
+                                <p class="m-0">Friends</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item p1 rounded">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="https://www.ugolnik.info/wp-content/uploads/2018/12/Facebook-Instant-Games_logo.jpg" alt="avatar" class="rounded-circle avatar">
+                                </div>
+                                <p class="m-0">Games</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item p1 rounded">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="https://www.pngfind.com/pngs/m/41-419791_fb-page-icon-png-facebook-page-logo-png.png" alt="avatar" class="rounded-circle avatar">
+                                </div>
+                                <p class="m-0">Pages</p>
+                            </a>
+                        </li>
+                        <li class="dropdown-item p1 rounded">
+                            <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
+                                <div class="p-2">
+                                    <img src="https://th.bing.com/th/id/OIP.rET3jCqSuVDEesUed632iAHaEK?pid=ImgDet&rs=1" alt="avatar" class="rounded-circle avatar">
+                                </div>
+                                <p class="m-0">Marketplace</p>
+                            </a>
+                        </li>
+<hr class="m-0">
+
+                    <div class="d-flex justify-content-around">
+                        <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                            <i class="bi bi-hand-thumbs-up me-3"></i>
+                            <p class="m-0">Like</p>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                            <i class="bi bi-envelope me-3"></i>
+                            <p class="m-0">Comment</p>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-around">
+                        <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                            <i class="bi bi-share me-3"></i>
+                            <p class="m-0">Share</p>
+                        </div>
+                    </div>
+                </div> 
+                
+                
+            </div>
+            <hr class="m-0">
+            <div class="bg-white p-4 rounded shadow mt-3 ">
+                <div class="d-flex justify-content-between">
+                    <div class="d-flex">
+                        <img src="https://source.unsplash.com/random/30" alt=" avatar" class="avatar rounded-circle me-2">
+                        <div>
+                            <p class="m-0 fw-bold">Ellen Bruki</p>
+                            <span class="text-muted fs-7">Aug 30 at 12:45pm</span>
+                        </div>
+                    </div>
+                    <i class="bi bi-three-dots"></i>
+                </div>
+            
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa sapiente voluptate nesciunt similique, nostrum molestias possimus adipisci autem veniam nam repellat quibusdam laborum natus accusantium unde, nihil quasi id!
+                        </p>
+                        <img src="https://source.unsplash.com/random/40" alt=" post image" class="img-fluid">
+                    </div>
+                    <div class=" d-flex justify-content-between" >
+                        <div class="d-flex align-items-center">
+                           <div class="me-2">
+                               <i class="bi bi-hand-thumbs-up text-primary"></i>
+                               <i class="bi bi-emoji-smile text-warning"></i>
+                               <i class="bi bi-emoji-angry test-danger"></i>
+                           </div>
+                           <p class="m-0 text-muted fs-7">Israel, Chek, and 3 others</p>
+                        </div>  
+                        <p class="m-0 text-primary" > 21 comments</p>
+                   </div>
+                   <hr class="m-0">
+                   <div class="d-flex justify-content-around">
+                       <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                           <i class="bi bi-hand-thumbs-up me-3"></i>
+                           <p class="m-0">Like</p>
+                   </div>
+                   <div class="d-flex justify-content-around">
+                       <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                           <i class="bi bi-envelope me-3"></i>
+                           <p class="m-0">Comment</p>
+                       </div>
+                   </div>
+                   <div class="d-flex justify-content-around">
+                       <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                           <i class="bi bi-share me-3"></i>
+                           <p class="m-0">Share</p>
+                       </div>
+                   </div>
+                </div>
+            </div>    
+        </div>
 
 
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-</body>
+
+        <div class="col-12 col-lg-3"></div>
+      </div>
+    </div>
+
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
