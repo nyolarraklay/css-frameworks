@@ -1,5 +1,8 @@
 
 $primary:       rgb(213, 12, 240);
+$muted:         rgb(119, 78, 78) ;
+$info:          rgb(6, 167, 153);
+
 $spacer: 1rem;
 $spacers: (
   0: 0,
@@ -9,7 +12,7 @@ $spacers: (
   4: $spacer * 1.5,
   5: $spacer * 3,
   6: $spacer * 6,
-7: $spacer * 7,
+7: $spacer * 7,  
 8: $spacer * 8,
 );
 
