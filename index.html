@@ -16,10 +16,9 @@
             <div class="text-start bg-white shadow rounded p-3 input-group-lg">
                 <form>
                     <label for="email" class="form-label d-none">Email address:</label>                     
-                    <input type="email" class="form-control my-3" id="email" placeholder="e.g. JohnWick@example.com">   
-                    <label for="password" class="form-label d-none">Password:</label>
-                    <input type="password" class="form-control mt-3" id="password" placeholder="Password">
-                    <p class="fs-8">Password must have a minimum length of 8 characters</p>
+                    <input type="email" class="form-control my-3 fs-7" id="email" placeholder="e.g. JohnWick@example.com" required>   
+                    <label for="password" class="form-label d-none ">Password:</label>
+                    <input type="password" class="form-control mt-3 fs-7" id="password" placeholder="Password (Min. 8 Characters)" pattern=".{8,}" required>
                     <a href="feed.html"><button type="button" class="btn btn-primary w-100 my-3">Log In</button></a>
                     <a href="#" class="text-decoration-none text-center"><p>Forgotten Password</p></a>
                     <hr>
