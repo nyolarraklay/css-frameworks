@@ -18,16 +18,16 @@
                     <div class="fs-3 text-primary m-0 brandName "> Circle Connect</div> 
                     <div class="input-group ms-2">
                         <!--mobile-->
-                        <span class="input-group-prepend  d-lg-none" id="searchMenu" data-bs-toggle="dropdown" type="button" data-bs-auto-close="outside">
+                        <span class="input-group-prepend  d-lg-none" id="searchMenu" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside">
                             <div class="input-group-text bg-gray border-0 rounded-circle">
                                 <i class="bi bi-search me-2 text-muted"></i>
                             </div>
                         </span>
                         <!--desktop-->
-                        <span class="input-group-prepend d-none d-lg-block" id="searchMenu" data-bs-toggle="dropdown" type="button" data-bs-auto-close="outside">
+                        <span class="input-group-prepend d-none d-lg-block" id="searchMenu" data-bs-toggle="dropdown" aria-expanded="false" data-bs-auto-close="outside" type="button">
                             <div class="input-group-text bg-gray border-0 rounded-pill">
                                 <i class="bi bi-search me-2 text-muted"></i>
-                            <p class="m-0 fs-7 text-muted">Search Circle Connect</p>
+                                <p class="m-0 fs-7 text-muted">Search Circle Connect</p>
                             </div>
                         </span>
                             <ul class="dropdown-menu border-0 shadow p-3 overflow-auto" aria-labelledby="searchMenu">
@@ -98,7 +98,7 @@
                     </div>
                 </div>
                 <!--right-side-->
-                <div class="col d-flex d-md-none d-xl-flex  align-items-center justify-content-end">
+                <div class="col d-flex d-lg-none d-xl-flex  align-items-center justify-content-end">
                     <div class="d-none d-md-flex align-items-center justify-content-center">
                         <img src="https://source.unsplash.com/random/4" alt="user image" class="rounded-circle me-1 avatar">
                         <a href="profile.html" class="m-0 text-decoration-none">JohnWick</a>
@@ -121,7 +121,7 @@
         <div class="row justify-content-evenly">
             <!--left part of main-->
             <div class="col-12 col-lg-3">
-                <div class="d-none d-xxl-block h-100 fixed-top overflow-hidden">
+                <div class="d-none d-xxl-block h-100 overflow-hidden">
                     <ul class="navbar-nav mt-4 ms-3 d-flex flex-column pb-5 mb-5 pt-5 w-100 sidebar">
                         <li class="dropdown-item p1 rounded">
                             <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
@@ -204,7 +204,6 @@
                                     <i class="bi bi-plus-circle-fill fs-3 p1 text-primary rounded-circle"></i>
                                 </div>
                             </div>
-
                         </div>
                         <div class="rounded mx-1 customCard" >
                             <img src="https://source.unsplash.com/random/18" alt="story 2" class="card-img-top rounded imageStory">
@@ -230,8 +229,50 @@
                         <div class="p-1">
                             <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2 avatar">
                         </div>
-                        <input type="text" class="form-control rounded-pill border-0 bg-light" placeholder="What's on your mind?">
+                        <input type="text" class="form-control rounded-pill border-0 bg-light" placeholder="What's on your mind?" data-bs-toggle="modal" data-bs-target="#createModal">
+                    </div>                   
+                    <!-- Modal -->
+  <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-center">
+      <div class="modal-content">
+
+        <div class="modal-header align-items-center">
+          <h5 class="text-dark text-center w-100 m-0" id="createModalLabel">Create Post</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="my-1 p-1">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center" >
+                    <div class="p-2">
+                        <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2 avatar">
                     </div>
+                    <div>
+                        <p class="m-0 fw-bold">JohnWick</p>
+                        <select class="form-select border-0 bg-gray w-100 fs-7">
+                            <option value="public">Public</option>
+                            <option value="pin to top">Pin To Top</option>
+                            <option value="hide">Hide</option>
+                        </select>
+                    </div>
+                    
+                </div>
+                <div>
+                    <textarea id="" cols="30" rows="5" class="form-label border-0 w-100"></textarea>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Post</button>
+          
+        </div>
+      </div>
+    </div>
+  </div
+  
+  >
                     <div class="d-flex flex-lg-row mt-3 justify-content-evenly">
                         <div class="d-flex align-items-center justify-content-center rounded">
                             <i class="bi bi-camera-reels-fill me-2 text-danger"></i>
@@ -248,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="bg-white p-4 rounded shadow mt-3 ">
+            <div class="bg-white p-4 rounded shadow mt-3 ">
                     <div class="d-flex justify-content-between">
                         <div class="d-flex">
                             <img src="https://source.unsplash.com/random/30" alt=" avatar" class="avatar rounded-circle me-2">
@@ -313,42 +354,42 @@
                     </div>
                     <i class="bi bi-three-dots"></i>
                 </div>
-            
-                    <div>
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa sapiente voluptate nesciunt similique, nostrum molestias possimus adipisci autem veniam nam repellat quibusdam laborum natus accusantium unde, nihil quasi id!
-                        </p>
-                        <img src="https://source.unsplash.com/random/40" alt=" post image" class="img-fluid">
-                    </div>
-                    <div class=" d-flex justify-content-between" >
-                        <div class="d-flex align-items-center">
-                           <div class="me-2">
-                               <i class="bi bi-hand-thumbs-up text-primary"></i>
-                               <i class="bi bi-emoji-smile text-warning"></i>
-                               <i class="bi bi-emoji-angry test-danger"></i>
-                           </div>
-                           <p class="m-0 text-muted fs-7">Israel, Chek, and 3 others</p>
-                        </div>  
-                        <p class="m-0 text-primary" > 21 comments</p>
-                   </div>
-                   <hr class="m-0">
-                   <div class="d-flex justify-content-around">
-                       <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
-                           <i class="bi bi-hand-thumbs-up me-3"></i>
-                           <p class="m-0">Like</p>
-                   </div>
-                   <div class="d-flex justify-content-around">
-                       <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
-                           <i class="bi bi-envelope me-3"></i>
-                           <p class="m-0">Comment</p>
+                <div>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur ipsa sapiente voluptate nesciunt similique, nostrum molestias possimus adipisci autem veniam nam repellat quibusdam laborum natus accusantium unde, nihil quasi id!
+                    </p>
+                    <img src="https://source.unsplash.com/random/40" alt=" post image" class="img-fluid">
+                </div>
+                <div class=" d-flex justify-content-between" >
+                    <div class="d-flex align-items-center">
+                       <div class="me-2">
+                           <i class="bi bi-hand-thumbs-up text-primary"></i>
+                           <i class="bi bi-emoji-smile text-warning"></i>
+                           <i class="bi bi-emoji-angry test-danger"></i>
                        </div>
+                       <p class="m-0 text-muted fs-7">Israel, Chek, and 3 others</p>
+                    </div>  
+                    <p class="m-0 text-primary" > 21 comments</p>
+               </div>
+               <hr class="m-0">
+               <div class="d-flex justify-content-around">
+                   <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                       <i class="bi bi-hand-thumbs-up me-3"></i>
+                       <p class="m-0">Like</p>
+               </div>
+               <div class="d-flex justify-content-around">
+                   <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                       <i class="bi bi-envelope me-3"></i>
+                       <p class="m-0">Comment</p>
                    </div>
-                   <div class="d-flex justify-content-around">
-                       <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
-                           <i class="bi bi-share me-3"></i>
-                           <p class="m-0">Share</p>
-                       </div>
+               </div>
+               <div class="d-flex justify-content-around">
+                   <div class="d-flex align-items-center justify-content-center rounded text-muted p-1">
+                       <i class="bi bi-share me-3"></i>
+                       <p class="m-0">Share</p>
                    </div>
+               </div>
+                    
                 </div>
             </div>             
         </div>
@@ -395,7 +436,6 @@
                                     <i class="bi bi-three-dots text-muted p-2"></i>
                                 </div> 
                             </li>
-                
                         </ul>
                         <hr class="m-0">
                         <div class="d-flex align-items-center justify-content-between my-3">
@@ -466,7 +506,7 @@
     </div>
 
 
-
-    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<script src="/script.js" defer type="module"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
