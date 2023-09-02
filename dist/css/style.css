@@ -11900,4 +11900,8 @@ textarea.form-control-lg {
   height: 150px;
 }
 
+.leftPosition {
+  z-index: 1;
+}
+
 /*# sourceMappingURL=style.css.map */
