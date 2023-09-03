@@ -21,8 +21,10 @@ Circle Connect is a social media app focusing only on the user's circle of frien
 ### Installing
 
 1. Clone the repo:
-
-2. Install the dependencies:
+```bash
+ git clone https://github.com/nyolarraklay/css-frameworks.git
+```
+3. Install the dependencies:
 ```bash
   npm install bootstrap
   npm install -D Sass live-server
