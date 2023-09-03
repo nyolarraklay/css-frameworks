@@ -1,13 +1,13 @@
-const homeIcon = document.querySelector(".bi-house-door-fill");
+const profilePage = document.querySelector(".profilePage");
 function redirectButtons() {
-  location.href = "feed.html";
+  location.href = "../profile/index.html";
 };
 
-homeIcon.addEventListener("click", redirectButtons);
+profilePage.addEventListener("click", redirectButtons);
 
 const brandName = document.querySelector(".brandName");
 function redirectButtonsLogin() {
-  location.href = "index.html";
+  location.href = "../index.html";
 };
 
 brandName.addEventListener("click", redirectButtonsLogin);
