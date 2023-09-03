@@ -121,7 +121,7 @@
         <div class="row justify-content-evenly">
             <!--left part of main-->
             <div class="col-12 col-lg-3">
-                <div class="d-none d-xl-block h-100 overflow-hidden">
+                <div class="d-none d-xl-block h-100 w-100 leftPosition fixed-top overflow-hidden">
                     <ul class="navbar-nav mt-2 ms-1 d-flex flex-column pb-1 mb-1 pt-5 w-100 sidebar">
                         <li class="dropdown-item p1 rounded">
                             <a href="#" class="text-decoration-none text-dark d-flex align-items-center">
@@ -225,14 +225,106 @@
                 </div>
 
                 <div class="bg-white p-3 mt-3 rounded border shadow">
+                    <div class="d-flex justify-content-between">
+<h5>Post</h5>
+<p class="fs-7 text-info" data-bs-toggle="modal" data-bs-target="#createFilter">Filters</p>
+                    </div>
+
+<!--Modal-->
+  <div class="modal fade" id="createFilter" tabindex="-1" aria-labelledby="createFilterLabel" aria-hidden="true" data-bs-backdrop="false">
+    <div class="modal-dialog modal-dialog-center">
+      <div class="modal-content">
+
+        <div class="modal-header align-items-center">
+          <h5 class="text-dark text-center w-100 m-0" id="createFilterLabel">Post Filter</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <div class="my-1 p-1">
+            <div class="d-flex flex-column">
+                <div class="d-flex align-items-center">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-6 d-flex align-items-center" >
+        <div class="p-2">
+            <img src="https://cdn0.iconfinder.com/data/icons/facebook-ui-glyph/48/Sed-35-512.png" alt="avatar" class="rounded-circle me-2 avatar">
+        </div>
+            <p class="m-0" >Go to: </p>
+                    </div>
+                    <div class="col-6 align-items-center d-flex">
+    <select class="form-select border-0 bg-gray w-100 fs-7 d-inline">
+            <option value="public">Today</option>
+            <option value="pin to top">Yesterday</option>
+            <option value="hide">Last week</option>
+    </select>
+
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-6 d-flex align-items-center" >
+                        <div class="p-2">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS-aOexlFHsRozBjL9b-NRikjy83-o4Fwdlt3pt_AE&s" alt="avatar" class="rounded-circle me-2 avatar">
+                        </div>
+                            <p class="m-0" >Posted by: </p>
+                    </div>
+                    <div class="col-6 align-items-center d-flex">
+                        <select class="form-select border-0 bg-gray w-100 fs-7 d-inline">
+                            <option value="public">Anyone</option>
+                            <option value="pin to top">You</option>
+                            <option value="hide">Others</option>
+                        </select>
+
+                    </div>
+                </div>
+                <div class="row justify-content-between">
+                    <div class="col-6 d-flex align-items-center" >
+                        <div class="p-2">
+                            <img src="https://www.shareicon.net/data/128x128/2017/05/24/886392_lock_512x512.png" alt="avatar" class="rounded-circle me-2 avatar">
+                        </div>
+                            <p class="m-0" >Privacy: </p>
+                    </div>
+                    <div class="col-6 align-items-center d-flex">
+                        <select class="form-select border-0 bg-gray w-100 fs-7 d-inline">
+                            <option value="public">All posts</option>
+                            <option value="pin to top">Friends</option>
+                            <option value="hide">Only Me</option>
+                        </select>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer flex-nowrap">
+            <button type="button" class="btn btn-light w-100" data-bs-dismiss="modal">clear</button>
+            <button type="button" class="btn btn-primary w-100" data-bs-dismiss="modal">Post</button>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
                     <div class="d-flex">
                         <div class="p-1">
                             <img src="https://source.unsplash.com/collection/happy-people" alt="avatar" class="rounded-circle me-2 avatar">
                         </div>
                         <input type="text" class="form-control rounded-pill border-0 bg-light" placeholder="What's on your mind?" data-bs-toggle="modal" data-bs-target="#createModal">
-                    </div>                   
+                    </div>       
+
+
+
+
                     <!-- Modal -->
-  <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true" data-bs-backdrop="false">
+                    <div class="modal fade" id="createModal" tabindex="-1" aria-labelledby="createModalLabel" aria-hidden="true" data-bs-backdrop="false">
     <div class="modal-dialog modal-dialog-center">
       <div class="modal-content">
 
@@ -270,9 +362,7 @@
         </div>
       </div>
     </div>
-  </div
-  
-  >
+                     </div>
                     <div class="d-flex flex-lg-row mt-3 justify-content-evenly">
                         <div class="d-flex align-items-center justify-content-center rounded">
                             <i class="bi bi-camera-reels-fill me-2 text-danger"></i>
@@ -396,7 +486,7 @@
             
             <!--Right part of main-->
             <div class="col-12 col-lg-3">
-                <div class="d-none d-xl-block h-100 end-0 overflow-hidden scrollbar sidebarRight pt-4 w-100">
+                <div class="d-none d-xl-block h-100 end-0 fixed-top overflow-hidden scrollbar sidebarRight pt-4 w-100">
                     <div class="p-3 mt-4">
                         <h5 class="text-muted">Sponsored</h5>
                         <ul>
